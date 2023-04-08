@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-
+import Home from './components/Home';
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,11 @@ function App() {
           path="/signup"
           exact
           element={<SignUp />}
+        />
+                <Route 
+          path="/home"
+          exact
+          element={<Home />}
         />
       </Routes>
     </div>

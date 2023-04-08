@@ -1,0 +1,210 @@
+Started GET "/ws" for ::1 at 2023-04-07 13:14:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-04-07 13:14:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-04-07 13:14:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/signup" for ::1 at 2023-04-07 13:14:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+Started GET "/favicon.ico" for ::1 at 2023-04-07 13:14:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2023-04-07 13:14:38 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/dylanrhinehart/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/dylanrhinehart/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 460)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 1213)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230407201628)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230407201628"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-04-08 00:37:49.611915"], ["updated_at", "2023-04-08 00:37:49.611915"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/generate_text" for ::1 at 2023-04-08 00:56:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230408010350_create_cover_letters.rb
+
+
+):
+  
+activerecord (7.0.4.3) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.3) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.3) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.3) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.1) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCoverLetters (20230408010350)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "cover_letters" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_86ba148fd8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_cover_letters_on_user_id" ON "cover_letters" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230408010350"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/generate_text" for ::1 at 2023-04-08 00:57:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms | Allocations: 22213)
+
+
+  
+NameError (uninitialized constant ApplicationController::ChatGPT4Client):
+  
+app/controllers/application_controller.rb:4:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:02:54 -0700
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1645)
+
+
+  
+NameError (uninitialized constant ApplicationController::ChatGPT4Client):
+  
+app/controllers/application_controller.rb:4:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:03:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 22343)
+
+
+  
+NameError (uninitialized constant ApplicationController::ChatGPT4Client
+Did you mean?  ChatGpt4):
+  
+app/controllers/application_controller.rb:4:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:04:27 -0700
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 1681)
+
+
+  
+NameError (uninitialized constant ApplicationController::ChatGPT4Client
+Did you mean?  ChatGpt4):
+  
+app/controllers/application_controller.rb:4:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:04:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 22332)
+
+
+  
+NameError (uninitialized constant ApplicationController::ChatGPT4Client
+Did you mean?  ChatGpt4Client):
+  
+app/controllers/application_controller.rb:4:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:05:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 0.0ms | Allocations: 21826)
+
+
+  
+OpenAI::Client::Error (You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.):
+  
+lib/chat_gpt4_client.rb:9:in `generate_text'
+app/controllers/application_controller.rb:5:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:06:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms | Allocations: 21827)
+
+
+  
+OpenAI::Client::Error (You exceeded your current quota, please check your plan and billing details.):
+  
+lib/chat_gpt4_client.rb:9:in `generate_text'
+app/controllers/application_controller.rb:5:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:10:07 -0700
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 0.0ms | Allocations: 985)
+
+
+  
+OpenAI::Client::Error (You exceeded your current quota, please check your plan and billing details.):
+  
+lib/chat_gpt4_client.rb:9:in `generate_text'
+app/controllers/application_controller.rb:5:in `generate_text'
+Started GET "/generate_text" for ::1 at 2023-04-08 01:11:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#generate_text as */*
+  Parameters: {"prompt"=>"Hello ChatGPT", "length"=>10, "application"=>{"prompt"=>"Hello ChatGPT", "length"=>10}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Completed 200 OK in 903ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 22636)
+
+
